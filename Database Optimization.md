@@ -65,9 +65,9 @@ Ensures that all non-key attributes are fully functionally dependent on the prim
 
 ### 3.3 Pros and Cons of Normalization
 #### Pros:
-Reduces redundancy, saving storage space.
-Ensures data consistency and integrity by eliminating duplicate data.
-Easier to maintain and update normalized data structures.
+- Reduces redundancy, saving storage space.
+- Ensures data consistency and integrity by eliminating duplicate data.
+- Easier to maintain and update normalized data structures.
 
 #### Cons:
 Normalization can result in multiple joins between tables, which can slow down read performance for complex queries.
@@ -85,12 +85,12 @@ Caching is a mechanism for temporarily storing frequently accessed data in memor
 
 **Application-Level Caching:** The application can cache database results and store them in variables or in a dedicated cache layer to minimize database access.
 
-**4.3 Caching Strategies**
-Read-through caching: The application retrieves data from the cache, and if it's not available, it queries the database and then caches the result for future queries.
+### **4.3 Caching Strategies**
+- **Read-through caching:** The application retrieves data from the cache, and if it's not available, it queries the database and then caches the result for future queries.
 
-**Write-through caching:** Every time the database is updated, the cache is also updated to keep data consistent.
+- **Write-through caching:** Every time the database is updated, the cache is also updated to keep data consistent.
 
-**Time-to-live (TTL):** Cached data is given a set expiration time to ensure that outdated data is eventually cleared from the cache.
+- **Time-to-live (TTL):** Cached data is given a set expiration time to ensure that outdated data is eventually cleared from the cache.
 ### 4.4 Best Practices for Caching
 - Cache data that changes infrequently: If data doesn’t change often, caching it can significantly improve performance.
 - Set an appropriate TTL: Ensure that cached data expires after a reasonable amount of time, based on how often it changes.
