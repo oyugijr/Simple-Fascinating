@@ -21,29 +21,29 @@ Indexing is a technique used to speed up the retrieval of records from a databas
 
 It works similarly to an index in a book: instead of going through every page to find a topic, you can look it up directly in the index.
 
-**2.2 How Indexes Work**
+### **2.2 How Indexes Work**
 
 An index creates a data structure (usually a B-Tree or Hash table) that stores the values of a specified column or set of columns and the locations of the corresponding rows.
 When a query is executed, the database can refer to the index rather than scanning the entire table, which significantly reduces the data retrieval time.
 
-**2.3 Types of Indexes**
+### **2.3 Types of Indexes**
 
-Primary Index: Automatically created on the primary key of the table.
-Unique Index: Ensures that all values in the indexed column are unique.
-Composite Index: Created on multiple columns to optimize queries involving these columns.
-Full-Text Index: Used for full-text searches in fields containing large texts.
+- **Primary Index:** Automatically created on the primary key of the table.
+- **Unique Index:** Ensures that all values in the indexed column are unique.
+- **Composite Index:** Created on multiple columns to optimize queries involving these columns.
+- **Full-Text Index:** Used for full-text searches in fields containing large texts.
 
-**2.4 Best Practices for Indexing**
+### **2.4 Best Practices for Indexing**
 
-Create indexes on columns frequently used in the WHERE clause: This reduces the search space when filtering data.
-Index columns used in JOIN operations: If your queries involve joining tables, indexing the foreign key columns can speed up these operations.
-Avoid indexing small tables: For small tables, scanning the entire table is often faster than using an index.
-Limit the number of indexes: While indexes improve read performance, they slow down write operations. Therefore, only index columns that benefit your queries.
-Use Composite Indexes for multiple conditions: If a query often filters or sorts by multiple columns, consider creating a composite index.
+- **Create indexes on columns frequently used in the WHERE clause:** This reduces the search space when filtering data.
+- **Index columns used in JOIN operations:** If your queries involve joining tables, indexing the foreign key columns can speed up these operations.
+- **Avoid indexing small tables:** For small tables, scanning the entire table is often faster than using an index.
+- **Limit the number of indexes:** While indexes improve read performance, they slow down write operations. Therefore, only index columns that benefit your queries.
+- **Use Composite Indexes for multiple conditions:** If a query often filters or sorts by multiple columns, consider creating a composite index.
 
 ## **3. Normalization**
 
-**3.1 What is Normalization?**
+### **3.1 What is Normalization?**
 Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. 
 
 It involves dividing large tables into smaller, related tables and ensuring that data dependencies are properly managed.
@@ -71,7 +71,7 @@ Easier to maintain and update normalized data structures.
 
 #### Cons:
 Normalization can result in multiple joins between tables, which can slow down read performance for complex queries.
-3.4 When to Normalize
+### 3.4 When to Normalize
 Normalize when data consistency is a priority, especially in transactional databases where data integrity is critical.
 
 ## 4. Caching
