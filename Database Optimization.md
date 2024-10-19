@@ -1,7 +1,7 @@
 
 # **Database Optimization Basics: Indexing, Normalization, and Caching**
 
-### *Rodgers Wisdom - Sat 19th*
+### *Rodgers Wisdom - Saturday 19th 2024*
 
 ---
 
