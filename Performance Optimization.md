@@ -1,6 +1,6 @@
 # Performance Optimization Guide for Web and Mobile Applications
 
-## Table of Contents1
+## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Understanding Performance Metrics](#understanding-performance-metrics)
